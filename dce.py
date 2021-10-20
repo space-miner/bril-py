@@ -49,7 +49,7 @@ def remove_dead_code(instructions):
     return instructions
 
 
-def simple_dead_code_elimination(instructions):
+def simple_dce(instructions):
     instructions = remove_dead_code(instructions)
     labeled_blocks = cfg.make_labeled_blocks(instructions)
     basic_blocks = []
@@ -68,5 +68,5 @@ if __name__ == "__main__":
     functions = prog["functions"]
     for function in functions:
         instructions = function["instrs"]
-        function["instrs"] = simple_dead_code_elimination(instructions)
+        function["instrs"] = simple_dce(instructions)
     print(json.dumps(prog, indent=4, sort_keys=True))
