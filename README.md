@@ -7,7 +7,7 @@ bril functions can be represented as json like:
 for more [documentation](https://capra.cs.cornell.edu/bril/lang/syntax.html) on bril's json representation
 
 ### cfg 
-contains a program that parses the json representation of bril programs and creates a cfg. returning a DOT representationo of the input program
+contains a program that parses the json representation of bril programs and creates a control flow graph. returning a DOT representationo of the input program
 
 *make_labeled_blocks* chunks a program into basic blocks and assigns an label to each basic block, it uses the label for basic blocks if it comes with one
 
