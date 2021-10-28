@@ -26,6 +26,8 @@ b = 3
 c = True
 if c:
   a = a-1
+else:
+  a = a+1
 d = 4
 print(a+b)
 ```
@@ -36,6 +38,8 @@ b = 3
 c = True
 if c:
   a = a-1
+else:
+  a = a+1
 print(a+b)
 ```
 
