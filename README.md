@@ -25,7 +25,7 @@ a = 2
 b = 3
 c = True
 if c:
-  a -= 1
+  a = a-1
 d = 4
 print(a+b)
 ```
@@ -35,7 +35,7 @@ a = 2
 b = 3
 c = True
 if c:
-  a -= 1
+  a = a-1
 print(a+b)
 ```
 
@@ -49,17 +49,17 @@ an example of a program that this technique could work on might be
 ```python3
 a = 1
 b = 1
-c = a + b
+c = a+b
 b = 2
-d = a + b
+d = a+b
 ```
 can be transformed into an semantically equivalent program
 ```python3
 a = 1
 b = a
-c = a + a
+c = a+a
 b = 2
-d = a + b
+d = a+b
 ``` 
 by associating a value number to each value and giving that value assigning it a variable, 
 we can replace all instances where the redundant variables are used with the the variable associated with the value number. 
