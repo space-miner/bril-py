@@ -23,11 +23,8 @@ and example program of what what this does may look like:
 a = 1
 a = 2
 b = 3
-c = True
-if c:
+if True:
   a = a-1
-else:
-  a = a+1
 d = 4
 print(a+b)
 ```
@@ -35,11 +32,8 @@ transforms into the following equivalent program
 ```python3
 a = 2
 b = 3
-c = True
-if c:
+if True:
   a = a-1
-else:
-  a = a+1
 print(a+b)
 ```
 
